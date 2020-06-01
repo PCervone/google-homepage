@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+        <style>
+            body {
+                font-family: arial, sans-serif;
+                margin: 0
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                border-top: 1px solid #e4e4e4;
+                background-color: #f2f2f2;
+                position: fixed;
+                width: 100%;
+                height: 40px;
+                bottom: 0;
+            }
+            li {
+                float: left;
+                font-size: 14px;
+            }
+            li a {
+                display: block;
+                color: #5f6368;
+                text-align: center;
+                padding: 14px 0px 14px 27px;
+                text-decoration: none;
+            }
+            li a:hover {
+                text-decoration: underline;
+            }
+            .topnavbarsize {
+                font-size: 13px;
+                color: #000000;
+                opacity: 0.75;
+                padding: 19px 0px 0px 20px;
+            }
+            a {
+                text-decoration: none;
+                color: #1a0dab;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            #italia {
+                display: block;
+                color: rgba(0,0,0,.54);
+                text-align: center;
+                padding: 14px 0px 14px 27px;
+                text-decoration: none;
+                bottom: 14px;
+                height: 40px;
+            }
+            #logobox {
+                text-align: center;
+
+            }
+            #logoimg {
+                padding-top: 198px;
+            }
+            #searchbox {
+                display: flex;
+                flex-direction: row;
+                border: 1px solid #dfe1e5;
+                border-radius: 24px;
+                height: 44px;
+                width: 584px;
+                margin: 24px auto 0;
+            }
+            #searchbox:hover {
+                box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+                border-color: rgba(223,225,229,0);
+            }
+            #textcontainer {
+                margin: 0px 0px 0px 5px;
+                padding: 4px 0px 0px 0px;
+            }
+            #textbox {
+                font-size: 16px;
+                color: rgba(0,0,0,.87);
+                border: none;
+                outline: none;
+                width: 490px;
+                height: 34px;
+            }
+            #buttons {
+                text-align: center;
+                margin: 35px 0px;
+            }
+            #Submit {
+                background-color: #f2f2f2;
+                border: 1px solid #f2f2f2;
+                border-radius: 4px;
+                color: #5F6368;
+                height: 36px;
+                min-width: 54px;
+                font-size: 14px;
+                margin: 0px 4px;
+                padding: 0 16px;
+                cursor: pointer;
+            }
+            #Submit:hover {
+                box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+                background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+                border: 1px solid #c6c6c6;
+                color: #222;
+            }
+            #Submit:focus {
+                border: 1px solid #4d90fe;
+                outline: none;
+            }
+            #Lucky {
+                background-color: #f2f2f2;
+                border: 1px solid #f2f2f2;
+                border-radius: 4px;
+                color: #5F6368;
+                height: 36px;
+                min-width: 54px;
+                font-size: 14px;
+                margin: 0px 4px;
+                padding: 0 16px;
+                cursor: pointer;
+            }
+            #Lucky:hover {
+                box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+                background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+                border: 1px solid #c6c6c6;
+                color: #222;
+            }
+            #Lucky:focus {
+                border: 1px solid #4d90fe;
+                outline: none;
+            }
+            #glass {
+                margin: 10px 0px 0px 10px;
+                height: 25px;
+                width: 25px;
+            }
+            #microphone {
+                margin: 4px 0px 0px 5px;
+                height: 35px;
+                width: 35px;
+            }
+            .right {
+                float: right;
+            }
+            #impostazioni {
+                padding-right: 27px;
+            }
+            #accedi {
+                padding-right: 27px;
+            }
+            #inglese {
+                text-align: -webkit-center;
+                font-size: 13px;
+                color: #222;
+            }
+            #topnavbar {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                border-top: none;
+                background-color:transparent;
+                position: fixed;
+                width: 100%;
+                height: 40px;
+                top: 0;
+            }
+            #accedi {
+                color: #fff;
+                cursor: default;
+                text-decoration: none;
+                border: 1px solid #4285f4;
+                font-weight: bold;
+                outline: none;
+                background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+                border-radius: 2px;
+                padding: 5px 12px 5px 12px;
+                margin: 13px 30px 0px 15px;
+                font-size: 13px;
+            }
+            #boxes {
+                padding: 12px 0px 14px 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <ul id="topnavbar">
+                <li><a class="topnavbarsize" href="https://about.google/?fg=1&utm_source=google-IT&utm_medium=referral&utm_campaign=hp-header">Chi siamo</a></li>
+                <li><a class="topnavbarsize" href="https://store.google.com/IT?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=it-IT">Google Store</a></li>
+                <li class="right"><a id="accedi" href="https://accounts.google.com/ServiceLogin?hl=it&passive=true&continue=https://www.google.it/%3Fgws_rd%3Dssl">Accedi</a></li>
+                <li class="right"><a id="boxes" title="App Google" href="https://www.google.it/intl/it/about/products?tab=wh"><img src="/google-homepage/images/boxes.png"></a></li>
+                <li class="right"><a class="topnavbarsize" href="https://www.google.it/imghp?hl=it&tab=wi&ogbl">Immagini</a></li>                
+                <li class="right"><a class="topnavbarsize" href="https://mail.google.com/mail/?tab=wm&ogbl">Gmail</a></li>
+            </ul>
+        </header> 
+        <div id="logobox">
+            <img id="logoimg" alt="Google" src="images/googlelogo.png">
+        </div>
+        <form name="search "action="https://www.google.com/" method="GET">
+            <div id="searchbox">
+                <img id="glass" src="/google-homepage/images/glass.png">
+                <div id="textcontainer"><input id="textbox" type="text" maxlength="2048" autocapitalize="off" autocomplete="off" autocorrect="off" autofocus="" spellcheck="false" title="Cerca" value=""></div>
+                <a href="#"><img id="microphone" src="/google-homepage/images/microphone.png"></a>
+            </div>                
+            <div id="buttons">
+                <input id="Submit" type="submit" value="Cerca con Google">
+                <input id="Lucky" type="submit" value="Mi sento fortunato">
+            </div>
+        </form> 
+        <div id="inglese">
+            Google offerto in: <a href="https://www.google.com/setprefs?sig=0_7IOBTkTMt2ehrKQ4VsCYTDkEM00%3D&amp;hl=en&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjctKyls9vpAhURC-wKHX3tBakQ2ZgBCBE">English</a>
+        </div>
+        <footer>
+            <ul id="italia">
+                <li>Italia</li>
+            </ul>
+            <ul>
+                <li><a href="https://www.google.com/intl/it_it/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Pubblicità</a></li>
+                <li><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Soluzioni aziendali</a></li>
+                <li><a href="https://google.com/search/howsearchworks/?fg=1">Come funziona la Ricerca</a></li>
+                <li id="impostazioni" class="right"><a href="#">Impostazioni</a></li>
+                <li class="right"><a href="https://policies.google.com/terms?fg=1">Termini</a></li>                
+                <li class="right"><a href="https://policies.google.com/privacy?fg=1">Privacy</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
